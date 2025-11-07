@@ -1,0 +1,295 @@
+/**
+ * Admin Page Styles for Wilson API Plugin
+ * Styled similar to WP Mail SMTP admin interface
+ *
+ * @package WilsonApiPlugin
+ */
+
+/* Main Wrapper */
+.wilson-api-wrap {
+  margin: 0 0 0 -20px;
+  background: #f0f0f1;
+  min-height: calc(100vh - 32px);
+}
+
+/* Header Section */
+.wilson-api-header {
+  background: #fff;
+  padding: 30px 40px;
+  border-bottom: 1px solid #dcdcde;
+  margin-bottom: 30px;
+}
+
+.wilson-api-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wilson-api-title {
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1d2327;
+}
+
+.wilson-api-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #646970;
+}
+
+/* Content Area */
+.wilson-api-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 40px;
+}
+
+/* Card Styles */
+.wilson-api-card {
+  background: #fff;
+  border: 1px solid #dcdcde;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wilson-api-card-header {
+  padding: 20px 30px;
+  border-bottom: 1px solid #dcdcde;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.wilson-api-card-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d2327;
+}
+
+.wilson-api-card-body {
+  padding: 30px;
+}
+
+/* Actions Area */
+.wilson-api-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wilson-api-cache-info {
+  font-size: 13px;
+  color: #646970;
+}
+
+.wilson-api-refresh-btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.wilson-api-refresh-btn .dashicons {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.wilson-api-refresh-btn .spin {
+  animation: wilson-api-spin 1s linear infinite;
+}
+
+@keyframes wilson-api-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Table Styles */
+.wilson-api-table-wrapper {
+  overflow-x: auto;
+  margin: 0;
+}
+
+.wilson-api-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.wilson-api-table th,
+.wilson-api-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dcdcde;
+  vertical-align: top;
+}
+
+/* For key-value pair tables (tbody th) */
+.wilson-api-table tbody th {
+  background: #f6f7f7;
+  font-weight: 600;
+  color: #1d2327;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 200px;
+  min-width: 180px;
+  white-space: nowrap;
+}
+
+.wilson-api-table tbody td {
+  font-size: 14px;
+  color: #2c3338;
+  word-break: break-word;
+}
+
+/* For list tables (thead th) */
+.wilson-api-table thead th {
+  background: #f6f7f7;
+  font-weight: 600;
+  color: #1d2327;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #d0d0d0;
+  white-space: nowrap;
+}
+
+.wilson-api-table tbody tr:hover {
+  background: #f6f7f7;
+}
+
+.wilson-api-table code {
+  background: #f6f7f7;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.wilson-api-table pre {
+  margin: 0;
+  padding: 12px;
+  background: #f6f7f7;
+  border-radius: 3px;
+  overflow-x: auto;
+  max-width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.wilson-api-table pre code {
+  background: none;
+  padding: 0;
+  display: block;
+  white-space: pre;
+  line-height: 1.5;
+}
+
+/* No Data Message */
+.wilson-api-no-data {
+  text-align: center;
+  padding: 40px 20px;
+  color: #646970;
+  font-size: 14px;
+}
+
+/* Info Card */
+.wilson-api-info-card {
+  background: #f9f9f9;
+}
+
+.wilson-api-info-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.wilson-api-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wilson-api-info-label {
+  font-weight: 600;
+  color: #1d2327;
+  font-size: 13px;
+}
+
+.wilson-api-info-item code {
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: Consolas, Monaco, monospace;
+  border: 1px solid #dcdcde;
+  display: inline-block;
+}
+
+/* Notice Styles */
+.wilson-api-notice {
+  margin: 20px 40px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Error Notice in Card */
+.wilson-api-card-body .notice {
+  margin: 0 0 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+  .wilson-api-wrap {
+    margin-left: 0;
+  }
+
+  .wilson-api-header,
+  .wilson-api-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .wilson-api-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wilson-api-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wilson-api-refresh-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wilson-api-title {
+    font-size: 22px;
+  }
+
+  .wilson-api-card-body {
+    padding: 20px;
+  }
+
+  .wilson-api-table th,
+  .wilson-api-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}

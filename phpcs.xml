@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<ruleset name="Wilson API Plugin Coding Standards">
+    <description>Coding standards for Wilson API Plugin</description>
+
+    <!-- Check all PHP files in the plugin -->
+    <file>./src</file>
+    <file>./wilson-api-plugin.php</file>
+
+    <!-- Exclude vendor and build directories -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/build/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+    <!-- Use WordPress Coding Standards -->
+    <rule ref="WordPress">
+        <!-- Allow short array syntax -->
+        <exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+        
+        <!-- Allow namespace declarations -->
+        <exclude name="PSR2.Namespaces.NamespaceDeclaration"/>
+    </rule>
+
+    <!-- Check for PHP cross-version compatibility -->
+    <config name="testVersion" value="7.4-"/>
+    
+    <!-- Allow for WordPress and modern PHP -->
+    <rule ref="PHPCompatibility"/>
+
+    <!-- Show progress -->
+    <arg value="ps"/>
+    
+    <!-- Use colors in output -->
+    <arg name="colors"/>
+    
+    <!-- Show sniff codes in all reports -->
+    <arg value="ns"/>
+</ruleset>

@@ -1,0 +1,135 @@
+# Copyright (C) 2024 Wilson
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Wilson API Challenge Plugin 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wilson-api-plugin\n"
+"POT-Creation-Date: 2024-01-01 00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: wilson-api-plugin.php
+msgid "Wilson API Challenge Plugin"
+msgstr ""
+
+#: src/Core/Plugin.php
+msgid "Refreshing..."
+msgstr ""
+
+msgid "Data refreshed successfully!"
+msgstr ""
+
+msgid "Error refreshing data. Please try again."
+msgstr ""
+
+#: src/Api/ApiClient.php
+msgid "Failed to fetch data from API: %s"
+msgstr ""
+
+msgid "API returned invalid response code: %d"
+msgstr ""
+
+msgid "Failed to parse API response: %s"
+msgstr ""
+
+msgid "API returned invalid data structure"
+msgstr ""
+
+#: src/Admin/AdminPage.php
+msgid "Wilson API Data"
+msgstr ""
+
+msgid "View and manage data retrieved from the external API"
+msgstr ""
+
+msgid "API Data"
+msgstr ""
+
+msgid "Last updated: %s ago"
+msgstr ""
+
+msgid "Refresh Data"
+msgstr ""
+
+msgid "Error:"
+msgstr ""
+
+msgid "Information"
+msgstr ""
+
+msgid "API Endpoint:"
+msgstr ""
+
+msgid "Cache Duration:"
+msgstr ""
+
+msgid "1 hour"
+msgstr ""
+
+msgid "WP-CLI Command:"
+msgstr ""
+
+msgid "No data available."
+msgstr ""
+
+#: src/Blocks/DataTableBlock.php
+msgid "Wilson API Data Table"
+msgstr ""
+
+msgid "Display data from Wilson API in a table format"
+msgstr ""
+
+msgid "api"
+msgstr ""
+
+msgid "data"
+msgstr ""
+
+msgid "table"
+msgstr ""
+
+msgid "Loading data..."
+msgstr ""
+
+msgid "Error loading data"
+msgstr ""
+
+msgid "No data available"
+msgstr ""
+
+msgid "Display Settings"
+msgstr ""
+
+msgid "Show Table Header"
+msgstr ""
+
+msgid "Column Visibility"
+msgstr ""
+
+msgid "Toggle which columns to display in the table"
+msgstr ""
+
+#: src/CLI/RefreshCommand.php
+msgid "Data marked for refresh. The cache will be bypassed on the next request."
+msgstr ""
+
+msgid "Fetching fresh data from API..."
+msgstr ""
+
+msgid "Failed to fetch data: %s"
+msgstr ""
+
+msgid "Successfully fetched %d item from API."
+msgid_plural "Successfully fetched %d items from API."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Cache will expire in: %s"
+msgstr ""
+
+msgid "Failed to mark data for refresh. Please try again."
+msgstr ""
